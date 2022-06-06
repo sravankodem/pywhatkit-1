@@ -1,0 +1,46 @@
+<html>
+<body>
+<style>
+body
+{
+background-color: lightgreen;
+}
+form
+{
+font-size: 15px;
+}
+h1
+{
+color: blue;
+text-align: center;
+font-size: 30px;
+}
+b
+{
+font-size: 20px;
+}
+p
+{
+font-family: verdana;
+}
+</style>
+<h1><center>WHATSAPP MESSAGE</center></h1>
+<p>
+This site will help you to send whatsapp message automatically to the specified phone number at specified time. While entering phone number please mention the number with the country code(India +91).
+</p>
+<form method="POST" action="reply">  
+{% csrf_token %}  
+<pre>
+
+<b>Message 1</b>
+Enter Ph.no: <input type="number" id=1 name="phone"><br>
+Enter Message: <input type="text" id=2 name="msg"><br>
+Enter date: <input type="datetime-local" id=3 name="date"><br>
+
+
+	<input type="submit">
+
+</pre>
+</form>
+</body>
+</html>
